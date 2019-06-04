@@ -1,9 +1,9 @@
 require 'sinatra/base'
 
-module RubenApp
-	class Web < Sinatra::Base
-		get '/' do
-			'Bot is running...'
-		end
-	end
+class RubenApp < Sinatra::Base
+
+  get "/" do
+    "Hello World!"
+  end
+
 end
