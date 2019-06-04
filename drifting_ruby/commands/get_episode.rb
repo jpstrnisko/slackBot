@@ -1,13 +1,13 @@
 require 'rss'
-require 'open-url'
+require 'open-uri'
 
 module DriftingRuby
   module Commands
     class GetEpisode < SlackRubyBot::Commands::Base
       command 'get_latest_episode' do |client, data, _match|
-        url = 'https://driftingruby.com/episodes/feed.rss'
+        url = 'https://www.driftingruby.com/episodes/feed.rss'
         rss = RSS::Parser.parse(open(url).read, false).items.first
-        client.say(channel: data.channel, test: rss.link)
+        client.say(channel: data.channel, text: rss.link)
       end
 
       command 'say_hello' do |client, data, _match|
@@ -17,9 +17,8 @@ module DriftingRuby
   end
 end
 
-
 class HelloText
   def self.say_hello
-    'Hello! This is a bot!'
+    'Hello! This is a Bot!'
   end
 end
