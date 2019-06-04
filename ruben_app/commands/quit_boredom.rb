@@ -1,7 +1,7 @@
 require 'json'
 require 'open-uri'
 
-module DriftingRuby
+module RubenApp
   module Commands
     class QuitBoredom < SlackRubyBot::Commands::Base
       command 'quit_boredom' do |client, data, _match|

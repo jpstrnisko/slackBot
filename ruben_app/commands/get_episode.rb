@@ -1,7 +1,7 @@
 require 'rss'
 require 'open-uri'
 
-module DriftingRuby
+module RubenApp
   module Commands
     class GetEpisode < SlackRubyBot::Commands::Base
       command 'get_latest_episode' do |client, data, _match|

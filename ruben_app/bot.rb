@@ -1,4 +1,4 @@
-module DriftingRuby
+module RubenApp
   class Bot < SlackRubyBot::Bot
     help do
       title 'Drifting Ruby Bot'
