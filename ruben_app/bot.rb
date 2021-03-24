@@ -15,6 +15,12 @@ module RubenApp
         desc 'Returns an activity to cut boredom.'
         long_desc 'Returns the name of an activity that could cease your boredom.'
       end
+
+      command :get_players do
+        title 'get_players'
+        desc 'Returns number of server online players.'
+        long_desc 'Returns the amount of players currently connected to the server.'
+      end
     end
   end
 end
